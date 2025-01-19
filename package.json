@@ -1,7 +1,7 @@
 {
   "name": "porfolio",
   "version": "0.1.0",
-  "homepage": "http://www.paugalan.es",
+  "homepage": "https://www.paugalan.es",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
