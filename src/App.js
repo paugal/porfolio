@@ -24,9 +24,9 @@ function App() {
   return (
     <div className="App">
       <motion.h1
-        initial={{ opacity: 0, y: -50 }} // Start state
-        animate={{ opacity: 1, y: 0 }} // End state (animation)
-        transition={{ duration: 1 }} // Animation duration
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
       ></motion.h1>
       {/* <div className="blur-background">
         <div className="transition-background"></div>
@@ -34,9 +34,9 @@ function App() {
       <BlurBackground></BlurBackground>
       <span className="warning">This porfolio is work in progress 😓</span>
       <motion.h1
-        initial={{ opacity: 0, y: -10 }} // Start state
-        animate={{ opacity: 1, y: 0 }} // End state (animation)
-        transition={{ duration: 0.5 }} // Animation duration
+        initial={{ opacity: 0, y: -10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
       >
         <div className="home-title">
           <h1>Hi! I'm Pau Galan.</h1>
