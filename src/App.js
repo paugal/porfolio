@@ -11,10 +11,10 @@ import GalleryItemOpenContext from "./context/GalleryItemOpenContext.jsx";
 import MyDetails from "./components/MyDetails/MyDetails.jsx";
 
 const componentList = [
-  "Game Collection",
-  "WhatToWatch",
   "MORE: Mobility Report",
-  "Miscellaneous",
+  "Portfolio for Architect",
+  // "Game Collection",
+  // "WhatToWatch",
 ];
 
 function App() {
@@ -28,9 +28,6 @@ function App() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       ></motion.h1>
-      {/* <div className="blur-background">
-        <div className="transition-background"></div>
-      </div> */}
       <BlurBackground></BlurBackground>
       <span className="warning">This porfolio is work in progress 😓</span>
       <motion.h1
@@ -45,7 +42,7 @@ function App() {
 
           <span>
             Enthusiast of FrontEnd design and development. More than two years
-            of experience in React, HTML, JS, CSS... Eager to start a new
+            of experience in React, TS, Tailwind... Eager to start a new
             adventure!
           </span>
         </div>

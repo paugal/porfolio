@@ -1,8 +1,8 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import "./MyDetails.css";
 
-import Avatar from "../../assets/imgs/avatar.png";
+import Avatar from "../../assets/imgs/avatar-small.webp";
 import Star from "../../assets/imgs/star.svg";
 
 export default function MyDetails() {
@@ -41,12 +41,19 @@ export default function MyDetails() {
               Download CV
             </a>
           </div>
-          <div className="button-contact" >
-            <div className="contact-item" onClick={() => setShowContact(!showContact)}>Contact Me</div> 
-            {showContact ? <div className="contact-dropbox" >
-              <span> (+34) 645188899</span>
-              <span> pau.galan22@gmail.com</span>
-            </div> : null }
+          <div className="button-contact">
+            <div
+              className="contact-item"
+              onClick={() => setShowContact(!showContact)}
+            >
+              Contact Me
+            </div>
+            {showContact ? (
+              <div className="contact-dropbox">
+                <span> (+34) 645188899</span>
+                <span> pau.galan22@gmail.com</span>
+              </div>
+            ) : null}
           </div>
         </div>
       </motion.div>

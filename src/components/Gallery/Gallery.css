@@ -10,11 +10,12 @@ body.no-scroll {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 
 .gallery-item {
-    height: 500px;
-    width: 500px;
+    height: 400px;
+    width: 400px;
     background-color: #a3dcd4;
     border-radius: 7%;
     display: flex;
@@ -25,6 +26,7 @@ body.no-scroll {
     position: relative;
     transition: all 200ms ease-in-out;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .gallery-item:hover {
@@ -47,14 +49,14 @@ body.no-scroll {
 
 .gallery-item img {
     position: absolute;
-    height: 500px;
+    height: 300px;
     border-radius: 10px;
-    bottom: -200px;
+    bottom: -100px;
     transition: all 200ms ease-in-out;
 }
 
 .gallery-item:hover img {
-    bottom: -150px;
+    bottom: -50px;
 }
 
 .popUpItem {
@@ -104,11 +106,17 @@ body.no-scroll {
 
 .popUpItem-container {
     background-color: white;
-    height: 100%;
     border-radius: 20px 20px 0 0;
     height: calc(100% - 60px);
     padding: 1.5rem 0rem 1rem 0rem;
+    width: 100vw;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-y: auto;
+    position: relative;
 }
 
 .material-symbols-outlined {

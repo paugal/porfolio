@@ -11,8 +11,8 @@ import { motion } from "framer-motion";
 
 import gameCollectionImg from "./images/gameCollection.png";
 import whattowatchimg from "./images/whattowatch.png";
-import moreImg from "./images/more.png";
-import misc from "./images/02.png";
+import moreImg from "./images/more.webp";
+import alvaroPorfolio from "./images/alvaroPorfolio.webp";
 
 export default function GalleryItem({ componentName }) {
   const [showContent, setShowContent] = useState(false);
@@ -24,14 +24,14 @@ export default function GalleryItem({ componentName }) {
     "Game Collection": gameCollectionImg,
     WhatToWatch: whattowatchimg,
     "MORE: Mobility Report": moreImg,
-    Miscellaneous: misc,
+    "Portfolio for Architect": alvaroPorfolio,
   };
 
   const backgroundColorMap = {
     "Game Collection": "#4CAF50",
     WhatToWatch: "#F44336",
-    "MORE: Mobility Report": "#EC7EFF",
-    Miscellaneous: "#FF9800",
+    "MORE: Mobility Report": "#c6ff9a",
+    "Portfolio for Architect": "#2cc9aa",
   };
 
   const getBackgroundColorForComponent = (componentName) => {
@@ -57,18 +57,22 @@ export default function GalleryItem({ componentName }) {
     }
   }
 
-  const changeShowContent = () => {
-    console.log("CLICK!");
-    if (showContent) {
-      setIsVisible(false);
-      setTimeout(() => setShowContent(false), 300);
-      document.body.style.overflow = "auto";
-      setTimeout(() => setItemOpen(true), 300);
+  const changeShowContent = (componentName) => {
+    console.log(componentName);
+    if (componentName !== "Portfolio for Architect") {
+      if (showContent) {
+        setIsVisible(false);
+        setTimeout(() => setShowContent(false), 300);
+        document.body.style.overflow = "auto";
+        setTimeout(() => setItemOpen(true), 300);
+      } else {
+        setShowContent(true);
+        setTimeout(() => setIsVisible(true), 10);
+        document.body.style.overflow = "hidden";
+        setTimeout(() => setItemOpen(false), 10);
+      }
     } else {
-      setShowContent(true);
-      setTimeout(() => setIsVisible(true), 10);
-      document.body.style.overflow = "hidden";
-      setTimeout(() => setItemOpen(false), 10);
+      window.open("https://paugal.github.io/alvaro-porfolio/", "_blank");
     }
   };
 
@@ -94,7 +98,7 @@ export default function GalleryItem({ componentName }) {
         transition={{ delay: 0.4, duration: 0.8 }}
       >
         <div
-          onClick={changeShowContent}
+          onClick={() => changeShowContent(componentName)}
           className="gallery-item"
           style={{
             backgroundColor: getBackgroundColorForComponent(componentName),
