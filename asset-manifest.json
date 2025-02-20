@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.5fb84dcb.css",
-    "main.js": "/static/js/main.1e9d973e.js",
+    "main.js": "/static/js/main.744fe942.js",
     "static/media/img7.png": "/static/media/img7.7010998f7940a798a1c3.png",
     "static/media/whattowatch.png": "/static/media/whattowatch.d5967f7739bef272a897.png",
     "static/media/img6.jpg": "/static/media/img6.678d51955d23c5cc761e.jpg",
@@ -13,18 +13,18 @@
     "static/media/img3.jpg": "/static/media/img3.58d0cace4eaff0b9a1aa.jpg",
     "static/media/avatar-small.webp": "/static/media/avatar-small.0e6b17c34ce413338fa6.webp",
     "static/media/more-mockup2.webp": "/static/media/more-mockup2.6188915f8745fcd12a82.webp",
+    "static/media/CV_PAU_GALAN.pdf": "/static/media/CV_PAU_GALAN.d877a0306dd712065e6f.pdf",
     "static/media/alvaroPorfolio.webp": "/static/media/alvaroPorfolio.7c267e2e46dfe1572f5e.webp",
     "static/media/more.webp": "/static/media/more.4ee89ea0650d8c76ae23.webp",
-    "static/media/CV_PAU_GALAN.pdf": "/static/media/CV_PAU_GALAN.a44207ee282e1a343541.pdf",
     "static/media/acorn.woff": "/static/media/acorn.f2befad45d409ef85ca1.woff",
     "static/media/metro.svg": "/static/media/metro.eb410ca9c1367dbfb3a802901e4169d9.svg",
     "index.html": "/index.html",
     "static/media/star.svg": "/static/media/star.964efbfeb80f8ba75cafdc8e36fc6bf8.svg",
     "main.5fb84dcb.css.map": "/static/css/main.5fb84dcb.css.map",
-    "main.1e9d973e.js.map": "/static/js/main.1e9d973e.js.map"
+    "main.744fe942.js.map": "/static/js/main.744fe942.js.map"
   },
   "entrypoints": [
     "static/css/main.5fb84dcb.css",
-    "static/js/main.1e9d973e.js"
+    "static/js/main.744fe942.js"
   ]
 }
