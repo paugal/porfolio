@@ -51,7 +51,7 @@ export default function MyDetails() {
             {showContact ? (
               <div className="contact-dropbox">
                 <span> (+34) 645188899</span>
-                <span> pau.galan22@gmail.com</span>
+                <span> paugalan@proton.me</span>
               </div>
             ) : null}
           </div>
